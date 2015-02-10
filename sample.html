@@ -1,0 +1,64 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+    
+    
+
+    <script>
+    </script>
+
+    <link rel="stylesheet" href="css/grid.css">
+	<style type="text/css">
+	.grid__col {
+		background-color: red;
+	}
+	</style>
+</head>
+<body>
+<h1 class="title">Toast Sample</h1>
+
+<div class="container">
+  <div class="grid">
+        <div class="grid__col grid__col--1-of-4">
+			Hello
+        </div>
+        <div class="grid__col grid__col--3-of-4">
+			Block 2
+        </div>
+        <div class="grid__col grid__col--6-of-12">
+			Block 3
+        </div>
+  </div>
+</div>
+
+
+<div class="grid">
+  <div class="grid__col--1-of-3 grid__col--m-1-of-2 grid__col--s-1-of-2">
+    This column will behave like a 1-of-2 column under the medium breakpoint and the small breakpoint.
+  </div>
+
+  <div class="grid__col--1-of-3 grid__col--ab">
+    This column aligns to the bottom of its row.
+  </div>
+
+  <div class="grid__col--1-of-3 grid__col--am">
+    This column aligns to the middle of its row.
+  </div>
+
+  <div class="grid__col--3-of-5 grid__col--centered">
+    This column is centered and alone in its row.
+  </div>
+
+  <div class="grid__col--1-of-2 grid__col--d-last">
+    This column comes first in the DOM, but appears last in its row.
+  </div>
+
+  <div class="grid__col--1-of-2 grid__col--d-first">
+    This column appears last in the DOM, but appears first in its row.
+  </div>
+</div>
+
+
+
+</body>
+</html>   
