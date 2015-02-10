@@ -1,180 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Toast • The no-nonsense CSS grid</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="initial-scale=1" />
+<html>
 
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Toast : An insane grid. You’ve been warned.  (forked from daneden/Toast)">
 
-  <script type="text/javascript" src="//use.typekit.net/fcy7mfm.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <link href='//fonts.googleapis.com/css?family=Source+Code+Pro:400,600' rel='stylesheet' type='text/css' />
-</head>
-<body>
-  <div class="wrap">
-    <div class="grid">
-      <div class="grid__col grid__col--3-of-5 grid__col grid__col--centered">
-        <header class="site__header">
-          <h1 class="site__title">Toast</h1>
-          <span class="gamma site__desc">Insane, no-nonsense CSS grid</span>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Toast</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/tforsberg/Toast">View on GitHub</a>
+
+          <h1 id="project_title">Toast</h1>
+          <h2 id="project_tagline">An insane grid. You’ve been warned.  (forked from daneden/Toast)</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/tforsberg/Toast/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/tforsberg/Toast/tarball/master">Download this project as a tar.gz file</a>
+            </section>
         </header>
-      </div>
-      <div class="grid__col grid__col--3-of-5 grid__col--centered">
-        <section>
-          <h2>Unprecedented Control</h2>
-          <p>Twelve columns. Six columns. Nine columns. As many columns as you want, in as many combinations as you want.</p>
-          <pre class="code"><i>$col-groups:</i> (12, 6, 9);</pre>
-        </section>
-      </div>
     </div>
-    <figure class="grid grid--demo">
-      <div class='grid__col grid__col--1-of-2'></div>
-      <div class='grid__col grid__col--1-of-2'></div>
-      <div class='grid__col grid__col--1-of-3'></div>
-      <div class='grid__col grid__col--2-of-3'></div>
-      <div class='grid__col grid__col--3-of-3'></div>
-      <div class='grid__col grid__col--1-of-3'></div>
-      <div class='grid__col grid__col--1-of-3'></div>
-      <div class='grid__col grid__col--1-of-3'></div>
-      <div class='grid__col grid__col--1-of-4'></div>
-      <div class='grid__col grid__col--1-of-4'></div>
-      <div class='grid__col grid__col--2-of-4'></div>
-      <div class='grid__col grid__col--3-of-4'></div>
-      <div class='grid__col grid__col--1-of-4'></div>
-      <div class='grid__col grid__col--1-of-4'></div>
-      <div class='grid__col grid__col--1-of-4'></div>
-      <div class='grid__col grid__col--1-of-4'></div>
-      <div class='grid__col grid__col--1-of-4'></div>
-      <div class='grid__col grid__col--1-of-5'></div>
-      <div class='grid__col grid__col--1-of-5'></div>
-      <div class='grid__col grid__col--2-of-5'></div>
-      <div class='grid__col grid__col--1-of-5'></div>
-      <div class='grid__col grid__col--3-of-5'></div>
-      <div class='grid__col grid__col--2-of-5'></div>
-      <div class='grid__col grid__col--3-of-5 grid__col--centered'></div>
-      <div class='grid__col grid__col--1-of-5'></div>
-      <div class='grid__col grid__col--1-of-5'></div>
-      <div class='grid__col grid__col--1-of-5'></div>
-      <div class='grid__col grid__col--1-of-5'></div>
-      <div class='grid__col grid__col--1-of-5'></div>
-      <div class='grid__col grid__col--1-of-6'></div>
-      <div class='grid__col grid__col--2-of-6'></div>
-      <div class='grid__col grid__col--3-of-6'></div>
-      <div class='grid__col grid__col--4-of-6'></div>
-      <div class='grid__col grid__col--2-of-6'></div>
-      <div class='grid__col grid__col--1-of-6'></div>
-      <div class='grid__col grid__col--1-of-6'></div>
-      <div class='grid__col grid__col--1-of-6'></div>
-      <div class='grid__col grid__col--1-of-6'></div>
-      <div class='grid__col grid__col--1-of-6'></div>
-      <div class='grid__col grid__col--1-of-6'></div>
-      <div class='grid__col grid__col--1-of-8'></div>
-      <div class='grid__col grid__col--2-of-8'></div>
-      <div class='grid__col grid__col--3-of-8'></div>
-      <div class='grid__col grid__col--2-of-8'></div>
-      <div class='grid__col grid__col--5-of-8'></div>
-      <div class='grid__col grid__col--3-of-8'></div>
-      <div class='grid__col grid__col--1-of-8'></div>
-      <div class='grid__col grid__col--1-of-8'></div>
-      <div class='grid__col grid__col--1-of-8'></div>
-      <div class='grid__col grid__col--1-of-8'></div>
-      <div class='grid__col grid__col--1-of-8'></div>
-      <div class='grid__col grid__col--1-of-8'></div>
-      <div class='grid__col grid__col--1-of-8'></div>
-      <div class='grid__col grid__col--1-of-8'></div>
-      <div class='grid__col grid__col--1-of-12'></div>
-      <div class='grid__col grid__col--2-of-12'></div>
-      <div class='grid__col grid__col--3-of-12'></div>
-      <div class='grid__col grid__col--4-of-12'></div>
-      <div class='grid__col grid__col--2-of-12'></div>
-      <div class='grid__col grid__col--5-of-12'></div>
-      <div class='grid__col grid__col--7-of-12'></div>
-      <div class='grid__col grid__col--6-of-12'></div>
-      <div class='grid__col grid__col--6-of-12'></div>
-      <div class='grid__col grid__col--12-of-12'></div>
-      <div class='grid__col grid__col--1-of-12'></div>
-      <div class='grid__col grid__col--1-of-12'></div>
-      <div class='grid__col grid__col--1-of-12'></div>
-      <div class="grid__col grid__col--6-of-12"></div>
-      <div class='grid__col grid__col--1-of-12'></div>
-      <div class='grid__col grid__col--1-of-12'></div>
-      <div class='grid__col grid__col--1-of-12'></div>
-    </figure>
-    <div class="grid">
-      <div class="grid__col grid__col--7-of-12">
-          <h2>Fixed width gutters</h2>
-          <p>No fluid gutter width bullcrap. This is the real deal. What you set is what you get.</p>
-          <pre><i>$gutter-width:</i> 20px;</pre>
-      </div>
 
-      <figure class="grid__col grid__col--5-of-12">
-        <div class="grid grid--demo">
-          <div class="grid__col grid__col--2-of-2"></div>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="toast-framework" class="anchor" href="#toast-framework" aria-hidden="true"><span class="octicon octicon-link"></span></a>Toast Framework</h1>
 
-          <div class="grid__col grid__col--1-of-2"></div>
-          <div class="grid__col grid__col--1-of-2"></div>
+<p>The Toast framework is a grid. That's it. Soon, it might have type styles and whatnot, but its power is in its highly customisable design.</p>
 
-          <div class="grid__col grid__col--1-of-3"></div>
-          <div class="grid__col grid__col--1-of-3"></div>
-          <div class="grid__col grid__col--1-of-3"></div>
+<p>Set any number of columns, any gutter size you want, and whatever classes you need. Just edit the <code>_grid.scss</code> file’s variables to your needs.</p>
 
-          <div class="grid__col grid__col--1-of-4"></div>
-          <div class="grid__col grid__col--1-of-4"></div>
-          <div class="grid__col grid__col--1-of-4"></div>
-          <div class="grid__col grid__col--1-of-4"></div>
+<p>You should also know that you’d be insane to use Toast’s grid.</p>
 
-          <div class="grid__col grid__col--1-of-5"></div>
-          <div class="grid__col grid__col--1-of-5"></div>
-          <div class="grid__col grid__col--1-of-5"></div>
-          <div class="grid__col grid__col--1-of-5"></div>
-          <div class="grid__col grid__col--1-of-5"></div>
-        </div>
-      </figure>
+<p>To learn more, go to <a href="http://daneden.github.io/Toast">http://daneden.github.io/Toast</a></p>
 
-      <figure class="grid__col grid__col--5-of-12">
-        <div class="grid grid--demo">
-          <div class="grid__col grid__col--3-of-5"></div>
-          <div class="grid__col grid__col--1-of-5"></div>
-          <div class="grid__col grid__col--1-of-5"></div>
+<h2>
+<a id="quick-start-guide" class="anchor" href="#quick-start-guide" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quick-start guide</h2>
 
-          <div class="grid__col grid__col--3-of-4 grid__col--push-1-of-4"></div>
+<p>Using Toast is easy. First, link to grid.css in your HTML document's head:</p>
 
-          <div class="grid__col grid__col--2-of-3"></div>
-          <div class="grid__col grid__col--1-of-3"></div>
+<p><code>&lt;link rel="stylesheet" href="css/toast/grid.css"&gt;</code></p>
 
-          <div class="grid__col grid__col--1-of-2"></div>
-          <div class="grid__col grid__col--1-of-2"></div>
+<p>Then, to use the grid, you'll need a wrap (provided in your own CSS) and a <code>.grid</code> container.</p>
 
-          <div class="grid__col grid__col--2-of-2"></div>
-        </div>
-      </figure>
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>container<span class="pl-pds">"</span></span>&gt;
+  &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>grid<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>grid__col grid__col--1-of-4<span class="pl-pds">"</span></span>&gt;
 
-      <div class="grid__col grid__col--7-of-12">
-          <h2>Easy to use, hard to break</h2>
-          <p>It takes just a few lines of code to start using Toast. And it’ll work all the way down to IE8.</p>
-          <pre>&lt;<i>div</i> class="<b>grid</b>"&gt;
-  &lt;<i>div</i> class="<b>grid__col grid__col--3-of-5 grid__col--centered</b>"&gt;
-    &lt;<i>p</i>&gt;Centered columns? No problem.&lt;/<i>p</i>&gt;
-  &lt;/<i>div</i>&gt;
-  &lt;<i>div</i> class="<b>grid__col grid__col--3-of-5 grid__col--push-1-of-5</b>"&gt;
-    &lt;<i>p</i>&gt;Push and pull columns in plain English.&lt;/<i>p</i>&gt;
-  &lt;/<i>div</i>&gt;
-&lt;/<i>div</i>&gt;
-</pre>
-      </div>
+        &lt;/<span class="pl-ent">div</span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>grid__col grid__col--3-of-4<span class="pl-pds">"</span></span>&gt;
 
-      <div class="grid__col grid__col--3-of-5 grid__col--centered">
-        <h2>Limitless* possibilities</h2>
-        <p>Nested grids, custom namespaces, simple switches for features like pulls and pushes, responsive layouts, and more. Start using Toast today.</p>
-        <p class="promo"><a class="butt butt--primary" href="//github.com/daneden/toast">View on GitHub</a> <a class="butt" href="//raw.githubusercontent.com/daneden/Toast/master/css/grid.css">Download Quickstart CSS</a></p>
-      </div>
+        &lt;/<span class="pl-ent">div</span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>grid__col grid__col--6-of-12<span class="pl-pds">"</span></span>&gt;
+
+        &lt;/<span class="pl-ent">div</span>&gt;
+  &lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h2>
+<a id="customising" class="anchor" href="#customising" aria-hidden="true"><span class="octicon octicon-link"></span></a>Customising</h2>
+
+<p><code>$grid-namespace</code> and <code>$grid-column-namespace</code> adjusts the class names for the grid. With default values, grid wrappers have a class of <code>.grid</code> and columns <code>.grid__col</code>.</p>
+
+<p><code>$col-groups(n)</code> adjusts column divisions. For example, <code>$col-groups(12)</code> will produce a 12-column grid. <code>$col-groups(3,6,8)</code> will produce a 3-, 6-, and 8-column grid.</p>
+
+<p><code>$gutter-width</code> is—you guessed it—the gutter
+width. Accepts any unit.</p>
+
+<p><code>$breakpoint-medium</code> and <code>$breakpoint-small</code> are breakpoint placeholders. Columns have hooks to change their behaviour under these breakpoints. See the “Modifiers” section below.</p>
+
+<h2>
+<a id="modifiers" class="anchor" href="#modifiers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Modifiers</h2>
+
+<p>Toast has some modifiers to make different kinds of layouts easier. There are breakpoint hooks to have columns behave differently than their default behaviour under breakpoints:</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>grid<span class="pl-pds">"</span></span>&gt;
+  &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>grid__col--1-of-3 grid__col--m-1-of-2 grid__col--s-1-of-2<span class="pl-pds">"</span></span>&gt;
+    This column will behave like a 1-of-2 column under the medium breakpoint and the small breakpoint.
+  &lt;/<span class="pl-ent">div</span>&gt;
+
+  &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>grid__col--1-of-3 grid__col--ab<span class="pl-pds">"</span></span>&gt;
+    This column aligns to the bottom of its row.
+  &lt;/<span class="pl-ent">div</span>&gt;
+
+  &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>grid__col--1-of-3 grid__col--am<span class="pl-pds">"</span></span>&gt;
+    This column aligns to the middle of its row.
+  &lt;/<span class="pl-ent">div</span>&gt;
+
+  &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>grid__col--3-of-5 grid__col--centered<span class="pl-pds">"</span></span>&gt;
+    This column is centered and alone in its row.
+  &lt;/<span class="pl-ent">div</span>&gt;
+
+  &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>grid__col--1-of-2 grid__col--d-last<span class="pl-pds">"</span></span>&gt;
+    This column comes first in the DOM, but appears last in its row.
+  &lt;/<span class="pl-ent">div</span>&gt;
+
+  &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>grid__col--1-of-2 grid__col--d-first<span class="pl-pds">"</span></span>&gt;
+    This column appears last in the DOM, but appears first in its row.
+  &lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>That’s it. Have fun.</p>
+      </section>
     </div>
-  </div>
-  <footer class="site__footer">
-    <div class="wrap">
-      <p>*Possibilities may or may not actually be limited. Another thing by <a href="//daneden.me">Daniel Eden</a>.</p>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Toast maintained by <a href="https://github.com/tforsberg">tforsberg</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
     </div>
-  </footer>
-</body>
+
+    
+
+  </body>
 </html>
